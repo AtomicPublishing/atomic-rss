@@ -44,10 +44,10 @@ The `<channel>` element contains an entry for every series represented in the fe
 ```
 <channel>
    ...
-   <atomic:series id="57a08a7d-5d7f-4f7f-b726-dcb3de39b610" title="Da Daily Update" expiresAt="2021-04-22T18:16:34.000-07:00">
+   <atomic:series id="57a08a7d-5d7f-4f7f-b726-dcb3de39b610" title="The Stratechery Podcast" expiresAt="2021-04-22T18:16:34.000-07:00">
       ...
    </atomic:series>
-   <atomic:series id="58ad5fe1-ef5f-413c-94a5-dec97d62437c" title="Da Dithering" expiresAt="2021-04-22T18:16:34.000-07:00">
+   <atomic:series id="58ad5fe1-ef5f-413c-94a5-dec97d62437c" title="Dithering" expiresAt="2021-04-22T18:16:34.000-07:00">
       ...
    </atomic:series>
 ...
@@ -64,7 +64,7 @@ The `<atomic:series>` element has an object id attribute, and it uses child elem
    <atomic:subscription id="1052563">
       <expiresAt>2021-04-25T09:37:22.000-07:00</expiresAt>
    </atomic:subscription>
-   <atom:link href="https://rss.atomicpublishing.com/1.0.0/members/1288846/feed?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIiLCJpc3MiOiJjb29wZXIuZGVjYW50ZXIuZm0iLCJpdGEiOiIyMDIwLTA0LTA4VDAyOjAzOjA5Ljc3NVoiLCJqdGkiOiIzNTE4NThkZS1hODQyLTRkM2EtOTEyNC1iY2RkZmFiMmU1OGYiLCJzY29wZSI6ImZlZWQucmVhZCBlcGlzb2RlLnN0cmVhbSIsInN1YiI6IjEyODg4NDYifQ.jSEZW1K56CP6X4GmsIKi-LcNdkTG880AwEYbs0afAl0&series_id=57a08a7d-5d7f-4f7f-b726-dcb3de39b610" rel="related" type="application/rss+xml"/>
+   <atom:link href="https://rss.atomicpublishing.com/1.0.0/members/1288846/feed?access_token=<member_access_token>&series_id=57a08a7d-5d7f-4f7f-b726-dcb3de39b610" rel="related" type="application/rss+xml"/>
 </atomic:series>
 ```
 
@@ -103,7 +103,7 @@ The `<atomic:series>` element has an object id attribute, and it uses child elem
 Atom is an XML-based document format that describes lists of related information for RSS feeds.
 
 ```
-<atom:link href="https://atomic.ngrok.io/1.0.0/members/1288846/feed?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIiLCJpc3MiOiJjb29wZXIuZGVjYW50ZXIuZm0iLCJpdGEiOiIyMDIwLTA0LTA4VDAyOjAzOjA5Ljc3NVoiLCJqdGkiOiIzNTE4NThkZS1hODQyLTRkM2EtOTEyNC1iY2RkZmFiMmU1OGYiLCJzY29wZSI6ImZlZWQucmVhZCBlcGlzb2RlLnN0cmVhbSIsInN1YiI6IjEyODg4NDYifQ.jSEZW1K56CP6X4GmsIKi-LcNdkTG880AwEYbs0afAl0&series_id=57a08a7d-5d7f-4f7f-b726-dcb3de39b610" rel="related" type="application/rss+xml"/>
+<atom:link href="https://atomic.ngrok.io/1.0.0/members/1288846/feed?access_token=<member_access_token>&series_id=57a08a7d-5d7f-4f7f-b726-dcb3de39b610" rel="related" type="application/rss+xml"/>
 ```
 
 `<atom:link>` has the following attributes:
