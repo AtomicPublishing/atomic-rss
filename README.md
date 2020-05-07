@@ -15,7 +15,9 @@ RSS tags for Atomic
 Abstract
 ---
 
-Atomic Publishing provides an aggregated feed that presents multiple podcasts together that provides subscribers with a simpler signup and management experience. The Atomic namespace allows clients to identify and present Atomic Publishing podcasts as either a single stream or as separate items in the user interface yet allowing subscription to a single master feed. 
+Atomic Publishing provides an aggregated feed that presents multiple podcasts together that provides subscribers with a simpler signup and management experience. The Atomic namespace allows clients to identify and present Atomic Publishing podcasts as either a single stream or as separate items in the user interface yet allowing subscription to a single master feed.
+
+The easiest way to support Atomic feeds is to count the `<atomic:series>` tags, each of which includes an individual feed for an individual show. If there is more than one than simply display each `<atomic:series>` as its own show. You don't need to change anything about the UI of your player to support multiple shows per Atomic feed.
 
 `<atomic>` elements include `<atomic:series>`, `<atomic:episode>`, and `<atomic:subscription>`. Other RSS elements used in conjunction with atomic include `<channel>`, `<item>`, and `<atom:link>`. The atomic namespace is declared as an xmlns attribute of the `<rss>` tag. For example,
 
